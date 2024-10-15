@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;netstandard2.0</TargetFrameworks>
+    <IsPackable>true</IsPackable>
+    <Authors>ytt</Authors>
+    <Company>SoftPatterns</Company>
+    <Product>SoftPatterns.Cli</Product>
+    <PackageId>SoftPatterns.Cli.Reader</PackageId>
+    <Version>1.0.0</Version>
+    <PackageTags>command;line;arguments;parser;reader;args;cli</PackageTags>
+    <Description>
+      This library enables reading command line arguments in a procedural way, only reading the needed parameters on a specific code path, without requiring any initial parameters declaration (no need for special attributes, classes, or builders setup).
+      For more information and examples see - https://github.com/ytt0/softpatterns-cli-reader/blob/main/README.md
+      For changelog and breaking changes see - https://github.com/ytt0/softpatterns-cli-reader/blob/main/CHANGELOG.md
+    </Description>
+    <PackageProjectUrl>https://github.com/ytt0/softpatterns-cli-reader</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ytt0/softpatterns-cli-reader</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <SignAssembly>True</SignAssembly>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <Visible>false</Visible>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <GenerateNuspecDependsOn>SetPackageVersion;$(GenerateNuspecDependsOn)</GenerateNuspecDependsOn>
+  </PropertyGroup>
+
+  <Target Name="SetPackageVersion" DependsOnTargets="SetVersionProperties">
+    <PropertyGroup>
+      <PackageVersion>$(SemVer)</PackageVersion>
+    </PropertyGroup>
+  </Target>
+</Project>

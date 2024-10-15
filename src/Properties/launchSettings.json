@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SoftPatterns.Cli.Reader": {
+      "commandName": "Project",
+      "commandLineArgs": "-?"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{2DC19E0F-6698-49D3-8C2C-825523941845}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftPatterns.Cli.Reader", "src\SoftPatterns.Cli.Reader.csproj", "{059E9D0B-FBE9-4047-B9F1-463D17F3D4C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftPatterns.Cli.Reader.Tests", "tests\SoftPatterns.Cli.Reader.Tests.csproj", "{7620CE07-7D42-487C-B582-471B91AF914C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeAnalysis", "CodeAnalysis", "{B3C6BF7E-BCC4-42AD-B3C6-DABDE7D760C0}"
+	ProjectSection(SolutionItems) = preProject
+		build\CodeAnalysis\IsExternalInit.cs = build\CodeAnalysis\IsExternalInit.cs
+		build\CodeAnalysis\NullableAttributes.cs = build\CodeAnalysis\NullableAttributes.cs
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildTasks", "build\BuildTasks\BuildTasks.csproj", "{1AA8D24D-1D0A-4F18-97E7-196E3281A427}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{0F1FB430-2BD4-4846-8447-D62AE5E1D4F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notes", "examples\Notes\Notes.csproj", "{3BBF9E20-9F30-498B-9EEE-C36151756EE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{059E9D0B-FBE9-4047-B9F1-463D17F3D4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{059E9D0B-FBE9-4047-B9F1-463D17F3D4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{059E9D0B-FBE9-4047-B9F1-463D17F3D4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{059E9D0B-FBE9-4047-B9F1-463D17F3D4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7620CE07-7D42-487C-B582-471B91AF914C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7620CE07-7D42-487C-B582-471B91AF914C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7620CE07-7D42-487C-B582-471B91AF914C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7620CE07-7D42-487C-B582-471B91AF914C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA8D24D-1D0A-4F18-97E7-196E3281A427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA8D24D-1D0A-4F18-97E7-196E3281A427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA8D24D-1D0A-4F18-97E7-196E3281A427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA8D24D-1D0A-4F18-97E7-196E3281A427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BBF9E20-9F30-498B-9EEE-C36151756EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BBF9E20-9F30-498B-9EEE-C36151756EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BBF9E20-9F30-498B-9EEE-C36151756EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BBF9E20-9F30-498B-9EEE-C36151756EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3C6BF7E-BCC4-42AD-B3C6-DABDE7D760C0} = {2DC19E0F-6698-49D3-8C2C-825523941845}
+		{1AA8D24D-1D0A-4F18-97E7-196E3281A427} = {2DC19E0F-6698-49D3-8C2C-825523941845}
+		{3BBF9E20-9F30-498B-9EEE-C36151756EE9} = {0F1FB430-2BD4-4846-8447-D62AE5E1D4F3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6B4DFFD-430E-4F0D-BD95-63FD326DA2C4}
+	EndGlobalSection
+EndGlobal

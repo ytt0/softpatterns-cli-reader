@@ -1,0 +1,21 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsPublishable>false</IsPublishable>
+    <SatelliteResourceLanguages>none</SatelliteResourceLanguages>
+    <PublishDir>$(MSBuildThisFileDirectory)bin\$(Configuration)</PublishDir>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)bin\$(Configuration)</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)build\CodeAnalysis\*.cs">
+      <Link>CodeAnalysis\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <Visible>false</Visible>
+    </Compile>
+  </ItemGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)build\BuildTasks\VersionTask.targets"/>
+</Project>
